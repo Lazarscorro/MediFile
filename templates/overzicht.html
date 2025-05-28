@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Financieel Jaaroverzicht - MediFile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>MediFile</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+            <a href="/overzicht">Overzicht</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Financieel Jaaroverzicht 2023</h2>
+        <object class="pdf-viewer"
+            data="{{ url_for('static', filename='pdf/Finance.pdf') }}"
+            type="application/pdf">
+            <div class="fallback-link">
+                Kan het PDF-bestand niet getoond worden?
+                <a href="{{ url_for('static', filename='pdf/Finance.pdf') }}" target="_blank">
+                    Download het jaaroverzicht als PDF
+                </a>
+            </div>
+        </object>
+
+        <h3 class="section-title">Organisatiestructuur</h3>
+        <img src="{{ url_for('static', filename='images/org.png') }}" alt="Organisatiestructuur MediFile" class="org-chart-img">
+    </main>
+    <footer>
+        &copy; 2025 MediFile. Alle rechten voorbehouden.
+    </footer>
+</body>
+</html>
