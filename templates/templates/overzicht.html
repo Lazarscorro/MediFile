@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Overzicht - MediFile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>MediFile</h1>
+            <img src="{{ url_for('static', filename='images/logomedifile_1.png') }}" alt="MediFile Logo" class="header-logo">
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/overzicht">Overzicht</a>
+            <a href="/richtlijnen">Richtlijnen</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Overzicht</h2>
+
+
+        <img src="{{ url_for('static', filename='images/Finance.png') }}" alt="Overzicht" class="pdf-img">
+         <h3 class="section-title">Organisatiestructuur</h3>
+        <img src="{{ url_for('static', filename='images/org.png') }}" alt="Organisatiestructuur MediFile" class="pdf-img">
+    </main>
+
+
+    <footer>
+        &copy; 2025 MediFile. Alle rechten voorbehouden.
+    </footer>
+</body>
+</html>
