@@ -16,16 +16,8 @@
     </header>
     <main>
         <h2>Financieel Jaaroverzicht 2023</h2>
-        <object class="pdf-viewer"
-            data="{{ url_for('static', filename='pdf/Finance.pdf') }}"
-            type="application/pdf">
-            <div class="fallback-link">
-                Kan het PDF-bestand niet getoond worden?
-                <a href="{{ url_for('static', filename='pdf/Finance.pdf') }}" target="_blank">
-                    Download het jaaroverzicht als PDF
-                </a>
-            </div>
-        </object>
+        <!-- Zet hier een PNG/JPG export van je PDF-overzicht -->
+        <img src="{{ url_for('static', filename='images/Finance.png') }}" alt="Financieel Jaaroverzicht 2023" class="pdf-img">
 
         <h3 class="section-title">Organisatiestructuur</h3>
         <img src="{{ url_for('static', filename='images/org.png') }}" alt="Organisatiestructuur MediFile" class="org-chart-img">

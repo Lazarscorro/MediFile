@@ -38,60 +38,30 @@ footer {
     width: 100%;
 }
 
-.pdf-viewer {
-    width: 100%;
-    max-width: 900px;
-    height: 700px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 40px auto 30px auto;
-    background: #f4f8fb;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    display: block;
-}
-
 main {
     max-width: 900px;
     margin: 40px auto;
     background: #fff;
     padding: 36px 24px;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
-}
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+     }
 
 h2 {
     text-align: center;
     color: #005fa3;
-}
-
-.fallback-link {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.08rem;
-    font-weight: 600;
-    color: #005fa3;
-}
-
-.fallback-link a {
-    color: #005fa3;
-    text-decoration: underline;
-}
-
-.fallback-link a:hover {
-    color: #0095ff;
-}
-
-.org-chart-img {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
+        }
 .section-title {
     text-align: center;
     color: #005fa3;
     margin-top: 50px;
-}
+        }
+
+.org-chart-img, .pdf-img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
