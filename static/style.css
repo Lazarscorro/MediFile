@@ -1,67 +1,81 @@
+/* Algemene stijlen */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
+/* Header */
 header {
-    background-color: #0077cc;
-    color: white;
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+    display: flex;
+    flex-direction: column;  /* Titels en logo onder elkaar */
+    align-items: flex-start; /* Links uitlijnen */
+}
+
+.header-top h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+.header-logo {
+    margin-top: 10px;   /* Ruimte tussen titel en logo */
+    height: 50px;       /* Pas aan naar wens */
+    width: auto;
+}
+
+/* Navigatie */
+nav {
+    margin-top: 20px;
 }
 
 nav a {
-    color: white;
+    margin-right: 15px;
     text-decoration: none;
-    margin: 0 15px;
+    color: #2c3e50;
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #e74c3c;
 }
 
+/* Hoofdinhoud */
 main {
-    padding: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+main h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.pdf-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
 footer {
-    background-color: #0077cc;
-    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 36px 24px;
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-     }
-
-h2 {
-    text-align: center;
-    color: #005fa3;
-        }
-.section-title {
-    text-align: center;
-    color: #005fa3;
-    margin-top: 50px;
-        }
-
-.org-chart-img, .pdf-img {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    }
