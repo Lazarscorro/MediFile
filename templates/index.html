@@ -12,12 +12,7 @@
             <h1>MediFile</h1>
             <img src="{{ url_for('static', filename='images/logomedifile_1.png') }}" alt="MediFile Logo" class="header-logo">
         </div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/overzicht">Overzicht</a>
-            <a href="/richtlijnen">Richtlijnen</a>
-            <a href="/contact">Contact</a>
-        </nav>
+     {% include 'navbar.html' %}
     </header>
 
     <main>
