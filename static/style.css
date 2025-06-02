@@ -18,8 +18,8 @@ header {
 
 .header-top {
     display: flex;
-    flex-direction: column;  
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .header-top h1 {
@@ -29,8 +29,8 @@ header {
 }
 
 .header-logo {
-    margin-top: 10px;   
-    height: 50px;       
+    margin-top: 10px;
+    height: 50px;
     width: auto;
 }
 
@@ -53,7 +53,7 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    flex: 1; 
+    flex: 1;
 }
 
 main h2 {
@@ -64,7 +64,7 @@ main h2 {
 
 .pdf-img {
     display: block;
-    margin: 20px auto; 
+    margin: 20px auto;
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
@@ -75,7 +75,7 @@ footer {
     padding: 10px;
     background-color: #2c3e50;
     color: #fff;
-    margin-top: auto;   
+    margin-top: auto;
 }
 
 .logo-title {
@@ -93,4 +93,88 @@ footer {
     margin: 0;
     font-size: 2.5em;
     color: #000000;
+}
+
+.mission-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px;
+    max-width: 700px;
+    margin: 30px auto;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    transition: box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 8px;
+}
+
+button {
+    background-color: #2b78c0;
+    /* Blauw accentkleur */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px 0 10px 0;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #2b78c0;
+    /* Donkerder rood bij hover */
+}
+
+button:focus {
+    outline: 3px solid #2b78c0;
+    /* Focus ring voor toegankelijkheid */
+    outline-offset: 2px;
+}
+
+.policy-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.policy-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.policy-list {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.policy-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.policy-list li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }

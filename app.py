@@ -10,9 +10,9 @@ def home():
 def overzicht():
     return render_template("overzicht.html")
 
-@app.route("/richtlijnen")
-def richtlijnen():
-    return render_template("richtlijnen.html")
+@app.route("/beleidsregels")
+def beleidsregels():
+    return render_template("beleidsregels.html")
 
 @app.route("/contact")
 def contact():

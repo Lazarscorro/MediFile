@@ -20,14 +20,41 @@
     <main>
         <h2>Overzicht</h2>
 
+        <!-- Knop om afbeelding te tonen/verbergen -->
+        <button id="toggleFinanceBtn">Bekijk afbeelding</button>
+        
+        <!-- Afbeelding standaard verborgen -->
+        <img id="financeImg" src="{{ url_for('static', filename='images/Finance.png') }}" alt="Overzicht" class="pdf-img" style="display:none; margin-top:10px;">
 
-        <img src="{{ url_for('static', filename='images/Finance.png') }}" alt="Overzicht" class="pdf-img">
-         <h3 class="section-title">Organisatiestructuur</h3>
-        <img src="{{ url_for('static', filename='images/org.png') }}" alt="Organisatiestructuur MediFile" class="pdf-img">
+        <h3 class="section-title">Organisatiestructuur</h3>
+
+        <!-- Knop en verborgen afbeelding voor organisatiestructuur -->
+        <button id="toggleOrgBtn">Bekijk organisatiestructuur</button>
+        <img id="orgImg" src="{{ url_for('static', filename='images/org.png') }}" alt="Organisatiestructuur MediFile" class="pdf-img" style="display:none; margin-top:10px;">
     </main>
 
+    {% include 'footer.html' %}
 
-{% include 'footer.html' %}
+    <script>
+        // Functie om toggelen te regelen
+        function setupToggle(buttonId, imgId, showText, hideText) {
+            const btn = document.getElementById(buttonId);
+            const img = document.getElementById(imgId);
 
+            btn.addEventListener('click', () => {
+                if (img.style.display === 'none') {
+                    img.style.display = 'block';
+                    btn.textContent = hideText;
+                } else {
+                    img.style.display = 'none';
+                    btn.textContent = showText;
+                }
+            });
+        }
+
+        // Setup toggles voor beide afbeeldingen
+        setupToggle('toggleFinanceBtn', 'financeImg', 'Bekijk afbeelding', 'Verberg afbeelding');
+        setupToggle('toggleOrgBtn', 'orgImg', 'Bekijk organisatiestructuur', 'Verberg organisatiestructuur');
+    </script>
 </body>
 </html>
