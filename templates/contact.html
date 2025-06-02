@@ -7,13 +7,15 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <h1>MediFile</h1>
+     <header>
+    <div class="header-top">
+        <div class="logo-title">
             <img src="{{ url_for('static', filename='images/logomedifile_1.png') }}" alt="MediFile Logo" class="header-logo">
+            <h1>MediFile</h1>
         </div>
-       {% include 'navbar.html' %}
-    </header>
+    </div>
+    {% include 'navbar.html' %}
+</header>
 
     <main>
         <h2>Contact</h2>
