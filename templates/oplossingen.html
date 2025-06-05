@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producten & Diensten – MediFile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body class="page-producten">
+       <header>
+    <div class="header-top">
+        <div class="logo-title">
+            <img src="{{ url_for('static', filename='images/logomedifile_1.png') }}" alt="MediFile Logo" class="header-logo">
+            <h1>MediFile</h1>
+        </div>
+    </div>
+    {% include 'navbar.html' %}
+</header>
+
+    <main>
+        <section class="intro">
+            <h2>Producten & Diensten</h2>
+            <p>
+                Bij MediFile ontwikkelen we digitale oplossingen die de zorgsector versterken. Onze producten en diensten zijn ontworpen met één doel: zorgprofessionals ondersteunen in het veilig, efficiënt en vertrouwelijk beheren van medische gegevens.
+            </p>
+            <p>
+                Door technologie en gebruiksgemak samen te brengen, helpen we zorginstellingen om beter te presteren en patiënten optimaal te bedienen.
+            </p>
+        </section>
+
+        <section class="producten-blokken">
+            <div class="product-blok">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Digitaal medisch dossier" class="product-image">
+                <h3>Medisch Dossier Platform</h3>
+                <p>
+                    Een gebruiksvriendelijk platform voor het opslaan, bekijken en bewerken van medische dossiers, met geavanceerde beveiligingsmaatregelen die de vertrouwelijkheid van patiëntgegevens waarborgen.
+                </p>
+            </div>
+
+            <div class="product-blok">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Beveiligde communicatie" class="product-image">
+                <h3>Beveiligde Communicatie</h3>
+                <p>
+                    Betrouwbare en versleutelde communicatieoplossingen die samenwerking tussen huisartsen, specialisten en andere zorgverleners naadloos mogelijk maken.
+                </p>
+            </div>
+
+            <div class="product-blok">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Toegangsbeheer systeem" class="product-image">
+                <h3>Toegangsbeheer & Inlogmethodes</h3>
+                <p>
+                    Oplossingen voor veilige inlogmethodes, waaronder rolgebaseerde toegang, zodat alleen bevoegde medewerkers toegang hebben tot gevoelige informatie.
+                </p>
+            </div>
+        </section>
+
+        <section class="visie">
+            <p>
+                Bij MediFile combineren we innovatie met veiligheid, altijd met oog voor de privacy van de patiënt. Onze producten groeien mee met de behoeften van de zorgsector en voldoen aan de strengste normen voor gegevensbescherming.
+            </p>
+        </section>
+    </main>
+       {% include 'footer.html' %}
+</body>
+</html>

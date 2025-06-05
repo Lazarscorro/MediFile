@@ -21,11 +21,19 @@
     <h2>Welkom bij MediFile</h2>
     <p>Wij bieden veilige opslag van medische dossiers voor zorginstellingen.</p>
 
-    <section class="mission-card">
-        <img src="{{ url_for('static', filename='images/missie.jpg') }}" alt="Missie afbeelding" class="mission-img">
-        <h3>Onze Missie</h3>
-        <p>Bij MediFile zetten we ons in om zorgprofessionals te voorzien van een betrouwbare en veilige digitale omgeving voor het beheren van medische gegevens. We streven naar innovatie, privacybescherming en gebruiksvriendelijkheid, zodat elke patiënt de beste zorg kan ontvangen.</p>
-    </section>
+   <section class="mission-card">
+    <img 
+        src="{{ url_for('static', filename='images/missie.jpg') }}" 
+        alt="Afbeelding die de missie van MediFile visualiseert" 
+        class="mission-img"
+    >
+    <h3>Onze Missie</h3>
+    <p>
+        Bij <strong>MediFile</strong> staat de <em>vertrouwelijkheid van medische gegevens</em> centraal.<br><br>
+        Wij ondersteunen zorgprofessionals met een veilige en betrouwbare digitale omgeving waarin gevoelige informatie met de grootste zorg wordt behandeld.<br><br>
+        Onze oplossingen zijn gericht op <strong>innovatie</strong>, <strong>privacybescherming</strong> en <strong>gebruiksvriendelijkheid</strong> – zodat elke patiënt kan rekenen op optimale zorg, met respect voor zijn of haar privacy.
+    </p>
+</section>
 </main>
     
    {% include 'footer.html' %}

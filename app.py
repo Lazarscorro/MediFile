@@ -10,14 +10,17 @@ def home():
 def overzicht():
     return render_template("overzicht.html")
 
-@app.route("/beleidsregels")
-def beleidsregels():
-    return render_template("beleidsregels.html")
+@app.route("/gedragscode")
+def gedragscode():
+    return render_template("gedragscode.html")
 
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
 
+@app.route("/oplossingen")
+def oplossingen():
+    return render_template("oplossingen.html")
+
 if __name__ == "__main__":
-    app.run()
-                            
+    app.run(host="0.0.0.0", port=80)

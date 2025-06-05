@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gedragscodes - MediFile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-title">
+                <img src="{{ url_for('static', filename='images/logomedifile_1.png') }}" alt="MediFile Logo" class="header-logo">
+                <h1>MediFile</h1>
+            </div>
+        </div>
+        {% include 'navbar.html' %}
+    </header>
+    
+    <main class="container">
+        <h2>Gedragscode – onze belofte aan veiligheid en vertrouwen</h2>
+        <p>Bij MediFile nemen we de bescherming van medische gegevens uiterst serieus. Onze technologie ondersteunt zorgverleners bij het verwerken van gevoelige informatie – en dat vereist het hoogste niveau van integriteit, respect en vertrouwelijkheid. Deze gedragscode geldt voor iedereen die bij of met MediFile werkt, van medewerkers tot partners en leveranciers. Samen creëren we een veilige en ethisch verantwoorde digitale zorgomgeving.</p>
+
+        <div class="policy-content">
+
+            <div class="policy-section">
+                <h3>1. Vertrouwelijkheid en gegevensbescherming</h3>
+                <ul class="policy-list">
+                    <li>Medische en andere gevoelige gegevens worden te allen tijde als strikt vertrouwelijk behandeld.</li>
+                    <li>Alleen bevoegde personen hebben toegang tot vertrouwelijke informatie, en enkel wanneer dit noodzakelijk is voor hun werk.</li>
+                    <li>Informatie wordt op veilige wijze opgeslagen, verwerkt en gedeeld, conform de AVG (GDPR) en andere toepasselijke wetgeving.</li>
+                    <li>Verdachte situaties, datalekken of schendingen van vertrouwelijkheid worden onmiddellijk gemeld via de aangewezen interne procedures.</li>
+                    <li>MediFile stelt alles in het werk om databeveiliging structureel te verbeteren en op het hoogste niveau te houden.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>2. Integriteit en professioneel handelen</h3>
+                <ul class="policy-list">
+                    <li>Wij handelen eerlijk, transparant en verantwoordelijk in alles wat we doen.</li>
+                    <li>Medewerkers en partners gaan zorgvuldig en integer om met hun toegang tot systemen en informatie.</li>
+                    <li>We vermijden belangenconflicten en melden deze direct wanneer ze zich voordoen.</li>
+                    <li>Onze technologie wordt nooit misbruikt of ingezet voor doeleinden die strijdig zijn met wet- en regelgeving of onze waarden.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>3. Respect en samenwerking</h3>
+                <ul class="policy-list">
+                    <li>Iedereen binnen MediFile wordt met respect behandeld, ongeacht functie, achtergrond, overtuiging of identiteit.</li>
+                    <li>We bevorderen een cultuur van samenwerking, open communicatie en wederzijds vertrouwen.</li>
+                    <li>Leidinggevenden dragen actief bij aan een veilige en inclusieve werkomgeving.</li>
+                    <li>Meningsverschillen worden op professionele en constructieve wijze opgelost.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>4. Naleving van wet- en regelgeving</h3>
+                <ul class="policy-list">
+                    <li>MediFile conformeert zich strikt aan alle relevante wet- en regelgeving, waaronder de AVG, de WGBO en normen voor informatiebeveiliging zoals NEN 7510.</li>
+                    <li>We verwachten van al onze partners en leveranciers dat zij op dezelfde manier omgaan met ethiek en wetgeving.</li>
+                    <li>Overtredingen van deze gedragscode worden serieus genomen en kunnen leiden tot disciplinaire maatregelen of beëindiging van de samenwerking.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>5. Melden van zorgen</h3>
+                <ul class="policy-list">
+                    <li>Iedereen wordt aangemoedigd om onregelmatigheden, risico’s of schendingen van deze gedragscode te melden.</li>
+                    <li>Meldingen kunnen vertrouwelijk – en indien gewenst anoniem – worden gedaan via de officiële kanalen.</li>
+                    <li>MediFile behandelt elke melding serieus, met zorgvuldige opvolging en bescherming van de melder.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h3>6. Toezicht en continue verbetering</h3>
+                <ul class="policy-list">
+                    <li>We evalueren onze gedragscode regelmatig en passen deze aan waar nodig om in te spelen op nieuwe risico’s en ontwikkelingen.</li>
+                    <li>Opleidingen en bewustwordingsprogramma’s ondersteunen medewerkers in het naleven van deze code.</li>
+                    <li>Verantwoording en toezicht liggen bij de directie en compliance officer.</li>
+                </ul>
+            </div>
+
+            <div class="policy-conclusion">
+                <p><strong>Tot slot:</strong> Vertrouwelijkheid is geen optie – het is onze kernverantwoordelijkheid. Bij MediFile bouwen we aan een digitale zorgomgeving waar privacy en veiligheid nooit ter discussie staan. Deze gedragscode helpt ons daarbij. Door ons hier samen aan te houden, zorgen we voor vertrouwen in de zorg én in technologie.</p>
+            </div>
+
+        </div>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+</html>
