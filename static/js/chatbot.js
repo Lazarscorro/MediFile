@@ -85,7 +85,7 @@
                 if (lowerMsg.includes('adres') || lowerMsg.includes('locatie') || lowerMsg.includes('kantoor') || lowerMsg.includes('waar')) {
                     return "Ons kantoor is gevestigd op:\n\n" +
                            "MediFile B.V.\n" +
-                           "Malibaan 1\n" +
+                           "Maliebaan 1\n" +
                            "3521 AB Utrecht\n" +
                            "Nederland\n\n" +
                            "Wilt u een routebeschrijving? Ik kan u helpen met de beste route vanaf uw locatie.";

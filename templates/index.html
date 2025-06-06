@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
-     <header>
+<header>
     <div class="header-top">
         <div class="logo-title">
             <img src="{{ url_for('static', filename='images/logomedifile_1.png') }}" alt="MediFile Logo" class="header-logo">
@@ -17,26 +17,79 @@
     {% include 'navbar.html' %}
 </header>
 
-   <main>
+<main>
     <h2>Welkom bij MediFile</h2>
     <p>Wij bieden veilige opslag van medische dossiers voor zorginstellingen.</p>
 
-   <section class="mission-card">
-    <img 
-        src="{{ url_for('static', filename='images/missie.jpg') }}" 
-        alt="Afbeelding die de missie van MediFile visualiseert" 
-        class="mission-img"
-    >
-    <h3>Onze Missie</h3>
-    <p>
-        Bij <strong>MediFile</strong> staat de <em>vertrouwelijkheid van medische gegevens</em> centraal.<br><br>
-        Wij ondersteunen zorgprofessionals met een veilige en betrouwbare digitale omgeving waarin gevoelige informatie met de grootste zorg wordt behandeld.<br><br>
-        Onze oplossingen zijn gericht op <strong>innovatie</strong>, <strong>privacybescherming</strong> en <strong>gebruiksvriendelijkheid</strong> – zodat elke patiënt kan rekenen op optimale zorg, met respect voor zijn of haar privacy.
-    </p>
-</section>
-</main>
-    
-   {% include 'footer.html' %}
+    <!-- Missie-banner -->
+    <section class="mission-banner">
+        <div class="mission-content">
+            <!-- Missie: arts met tablet (zorg, data, privacy) -->
+            <img src="{{ url_for('static', filename='images/missie.jpg') }}" alt="Missie MediFile">
+            <div>
+                <h3>Onze missie</h3>
+                <p>
+                    Bij <strong>MediFile</strong> staat de <em>vertrouwelijkheid van medische gegevens</em> centraal.<br><br>
+                    Wij ondersteunen zorgprofessionals met een veilige en betrouwbare digitale omgeving waarin gevoelige informatie met de grootste zorg wordt behandeld.<br><br>
+                    Onze oplossingen zijn gericht op <strong>innovatie</strong>, <strong>privacybescherming</strong> en <strong>gebruiksvriendelijkheid</strong> zodat elke patiënt kan rekenen op optimale zorg, met respect voor zijn of haar privacy.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Grid van 6 kleine cards -->
+    <section class="producten-grid">
+        <div class="product-card">
+            <!-- Netwerkbeveiliging: netwerkkabels in server -->
+            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=600&q=80" alt="Netwerkbeveiliging">
+            <h3>Netwerkbeveiliging</h3>
+            <p>
+                Geavanceerde firewalls en encryptie beschermen uw data tegen ongeautoriseerde toegang.
+            </p>
+        </div>
+        <div class="product-card">
+            <!-- Privacybescherming: slot op toetsenbord -->
+            <img src="https://images.unsplash.com/photo-1515524738708-327f6b0037a7?auto=format&fit=crop&w=600&q=80" alt="Privacybescherming">
+            <h3>Privacybescherming</h3>
+            <p>
+                Volledige naleving van AVG-wetgeving en strikte toegangscontrole voor maximale privacy.
+            </p>
+        </div>
+        <div class="product-card">
+            <!-- Systeemintegratie: verbonden lijnen/netwerk -->
+            <img src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=600&q=80" alt="Systeemintegratie">
+            <h3>Systeemintegratie</h3>
+            <p>
+                Eenvoudige koppeling met bestaande zorgsystemen en elektronische patiëntendossiers.
+            </p>
+        </div>
+        <div class="product-card">
+            <!-- Data-analyse: grafiek op laptop -->
+            <img src="https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?auto=format&fit=crop&w=600&q=80" alt="Data-analyse">
+            <h3>Data-analyse</h3>
+            <p>
+                Inzichtelijke rapportages en analyses voor betere zorgbeslissingen en optimalisatie.
+            </p>
+        </div>
+        <div class="product-card">
+            <!-- Back-up: cloud icoon op scherm -->
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Back-up">
+            <h3>Betrouwbare back-up</h3>
+            <p>
+                Automatische back-ups en snelle herstelmogelijkheden voor maximale continuïteit.
+            </p>
+        </div>
+        <div class="product-card">
+            <!-- Support: helpdesk medewerker met headset -->
+            <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80" alt="Support">
+            <h3>24/7 Support</h3>
+            <p>
+                Ons team staat dag en nacht klaar om u te ondersteunen bij vragen of incidenten.
+            </p>
+        </div>
+    </section>
+</main>
+
+{% include 'footer.html' %}
 </body>
 </html>
